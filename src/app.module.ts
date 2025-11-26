@@ -21,6 +21,9 @@ import { Appointment } from './appointments/appointment.entity';
         database: process.env.DB_NAME,
         entities: [User, Appointment],
         synchronize: true,
+        ssl: {
+            rejectUnauthorized: false,
+          },
       }),
     }),
     AppointmentsModule,
