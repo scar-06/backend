@@ -43,7 +43,7 @@ export class GoogleCalendarService {
       description: appointment.notes ?? undefined,
       start: { dateTime: start },
       end: { dateTime: end },
-      attendees: [{ email: appointment.email }],
+      // attendees: [{ email: appointment.email }],
     };
 
     try {
